@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeGYm</title>
+</head>
+<body>
+<script>
+    let arrEL = ["go" , "sleep", "eat" , "play","study"];
+    let arrTV = ["đi" , "ngủ", "ăn" , "chơi","học"];
+    let value = prompt("Enter value to find : ");
+    let position ;
+    for (let i = 0 ; i < arrEL.length ; i++){
+        if (arrEL[i] == value) {
+            position = i ;
+            break;
+        }else {
+            position = -1;
+        }
+    }
+    if (position != -1) {
+        let x = arrTV[position];
+        alert(x);
+    } else {
+        alert("Không tìm thấy kết quả");
+    }
+</script>
+</body>
+</html>
